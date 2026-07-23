@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5ad07f1ad4f303929601106637a650d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f5ad07f1ad4f303929601106637a650d" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f5ad07f1ad4f303929601106637a650d = L.map(
+                "map_f5ad07f1ad4f303929601106637a650d",
+                {
+                    center: [40.73, -73.99],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_676f7c955f4d41f7148cc4c83e56edee = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_676f7c955f4d41f7148cc4c83e56edee.addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_e4702cd24f8f9a0b7531ef0dc5ee57b6 = new L.RegularPolygonMarker(
+                [40.76590936, -73.97634151],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 4,
+  "rotation": 45,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_2403209953e22b95a7eff51fb95948a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea34b6dee70fe6434c7dad24b7028713 = $(`<div id="html_ea34b6dee70fe6434c7dad24b7028713" style="width: 100.0%; height: 100.0%;">Round trip: Central Park S & 6 Ave (round trip) (1814 trips)</div>`)[0];
+                popup_2403209953e22b95a7eff51fb95948a4.setContent(html_ea34b6dee70fe6434c7dad24b7028713);
+            
+        
+
+        regular_polygon_marker_e4702cd24f8f9a0b7531ef0dc5ee57b6.bindPopup(popup_2403209953e22b95a7eff51fb95948a4)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_dd2e38d46d6dd68ee23eba20b544a8cf = new L.RegularPolygonMarker(
+                [40.7643971, -73.97371465],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 4,
+  "rotation": 45,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_4b6f00aa462f7c342c9cd933fcc5fd79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4c65fa3140239a152b216552a096517 = $(`<div id="html_f4c65fa3140239a152b216552a096517" style="width: 100.0%; height: 100.0%;">Round trip: Grand Army Plaza & Central Park S (round trip) (518 trips)</div>`)[0];
+                popup_4b6f00aa462f7c342c9cd933fcc5fd79.setContent(html_f4c65fa3140239a152b216552a096517);
+            
+        
+
+        regular_polygon_marker_dd2e38d46d6dd68ee23eba20b544a8cf.bindPopup(popup_4b6f00aa462f7c342c9cd933fcc5fd79)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_eb6f6e6d116f31342ea3f846c7e35ee3 = new L.RegularPolygonMarker(
+                [40.76915505, -73.98191841],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 4,
+  "rotation": 45,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_e2bb4df2573cd54adbfe549a433d7710 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1a4d623d0e91f6cd61ad3f9b085e8d33 = $(`<div id="html_1a4d623d0e91f6cd61ad3f9b085e8d33" style="width: 100.0%; height: 100.0%;">Round trip: Broadway & W 60 St (round trip) (494 trips)</div>`)[0];
+                popup_e2bb4df2573cd54adbfe549a433d7710.setContent(html_1a4d623d0e91f6cd61ad3f9b085e8d33);
+            
+        
+
+        regular_polygon_marker_eb6f6e6d116f31342ea3f846c7e35ee3.bindPopup(popup_e2bb4df2573cd54adbfe549a433d7710)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f31f1282bcfadeaccc515c377f9a8fd4 = new L.RegularPolygonMarker(
+                [40.71273266, -74.0046073],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 4,
+  "rotation": 45,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_535b39f500ace4c27e3e9100d45dfe7a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1f05291ed81d8f355a65cdee6caad3f = $(`<div id="html_e1f05291ed81d8f355a65cdee6caad3f" style="width: 100.0%; height: 100.0%;">Round trip: Centre St & Chambers St (round trip) (469 trips)</div>`)[0];
+                popup_535b39f500ace4c27e3e9100d45dfe7a.setContent(html_e1f05291ed81d8f355a65cdee6caad3f);
+            
+        
+
+        regular_polygon_marker_f31f1282bcfadeaccc515c377f9a8fd4.bindPopup(popup_535b39f500ace4c27e3e9100d45dfe7a)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_c54275ccf90d4ee2f14a9f62e325f770 = new L.RegularPolygonMarker(
+                [40.7643971, -73.97371465],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_18ef59a28e2e7d72f5fb32662918688e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e1e5923d3bcb65a769d9b9d3e650286 = $(`<div id="html_1e1e5923d3bcb65a769d9b9d3e650286" style="width: 100.0%; height: 100.0%;">Start: Grand Army Plaza & Central Park S → Central Park S & 6 Ave (282 trips)</div>`)[0];
+                popup_18ef59a28e2e7d72f5fb32662918688e.setContent(html_1e1e5923d3bcb65a769d9b9d3e650286);
+            
+        
+
+        regular_polygon_marker_c54275ccf90d4ee2f14a9f62e325f770.bindPopup(popup_18ef59a28e2e7d72f5fb32662918688e)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_30691041a764ee9d5c52ae1fef68f1b8 = new L.RegularPolygonMarker(
+                [40.76590936, -73.97634151],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_cc69189a95783650e7fb68f5a8a7b7dc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ee6df2eabd7b720b6c145499e5765eb = $(`<div id="html_5ee6df2eabd7b720b6c145499e5765eb" style="width: 100.0%; height: 100.0%;">End: Grand Army Plaza & Central Park S → Central Park S & 6 Ave (282 trips)</div>`)[0];
+                popup_cc69189a95783650e7fb68f5a8a7b7dc.setContent(html_5ee6df2eabd7b720b6c145499e5765eb);
+            
+        
+
+        regular_polygon_marker_30691041a764ee9d5c52ae1fef68f1b8.bindPopup(popup_cc69189a95783650e7fb68f5a8a7b7dc)
+        ;
+
+        
+    
+    
+            var poly_line_e2bf466cffd856bfb0db3b385e3d6520 = L.polyline(
+                [[40.7643971, -73.97371465], [40.76590936, -73.97634151]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_855294e0801381195226eab7a963cabc = new L.RegularPolygonMarker(
+                [40.70277159, -73.99383605],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_8c6ee0c9c32401b0949d879e38c57b54 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8967123b72d77e26f86336da22f10146 = $(`<div id="html_8967123b72d77e26f86336da22f10146" style="width: 100.0%; height: 100.0%;">Start: Old Fulton St → Centre St & Chambers St (272 trips)</div>`)[0];
+                popup_8c6ee0c9c32401b0949d879e38c57b54.setContent(html_8967123b72d77e26f86336da22f10146);
+            
+        
+
+        regular_polygon_marker_855294e0801381195226eab7a963cabc.bindPopup(popup_8c6ee0c9c32401b0949d879e38c57b54)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_23e795bb758c38dfff015e15580efa0c = new L.RegularPolygonMarker(
+                [40.71273266, -74.0046073],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_3fe72b559c7dee144f1b6965e0965b89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b62bc618c61c91b62d2b856ee25d3d06 = $(`<div id="html_b62bc618c61c91b62d2b856ee25d3d06" style="width: 100.0%; height: 100.0%;">End: Old Fulton St → Centre St & Chambers St (272 trips)</div>`)[0];
+                popup_3fe72b559c7dee144f1b6965e0965b89.setContent(html_b62bc618c61c91b62d2b856ee25d3d06);
+            
+        
+
+        regular_polygon_marker_23e795bb758c38dfff015e15580efa0c.bindPopup(popup_3fe72b559c7dee144f1b6965e0965b89)
+        ;
+
+        
+    
+    
+            var poly_line_ef0fdafc12c638dd25e72b017a1e156a = L.polyline(
+                [[40.70277159, -73.99383605], [40.71273266, -74.0046073]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_17b5b468f34e5f64512fdd8f721b9906 = new L.RegularPolygonMarker(
+                [40.76087502, -74.00277668],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_78b56d0989d82dd9e6a8910040d9f9cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6be599940af1057fc533c88773a96af4 = $(`<div id="html_6be599940af1057fc533c88773a96af4" style="width: 100.0%; height: 100.0%;">Start: 12 Ave & W 40 St → West St & Chambers St (249 trips)</div>`)[0];
+                popup_78b56d0989d82dd9e6a8910040d9f9cd.setContent(html_6be599940af1057fc533c88773a96af4);
+            
+        
+
+        regular_polygon_marker_17b5b468f34e5f64512fdd8f721b9906.bindPopup(popup_78b56d0989d82dd9e6a8910040d9f9cd)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_344287f3d5589362928da58a9476ed12 = new L.RegularPolygonMarker(
+                [40.71754834, -74.01322069],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_ece5285478d8a87c1e6f79d333e6e497 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_98f7be31adf4708dbe1a563c3fd9438a = $(`<div id="html_98f7be31adf4708dbe1a563c3fd9438a" style="width: 100.0%; height: 100.0%;">End: 12 Ave & W 40 St → West St & Chambers St (249 trips)</div>`)[0];
+                popup_ece5285478d8a87c1e6f79d333e6e497.setContent(html_98f7be31adf4708dbe1a563c3fd9438a);
+            
+        
+
+        regular_polygon_marker_344287f3d5589362928da58a9476ed12.bindPopup(popup_ece5285478d8a87c1e6f79d333e6e497)
+        ;
+
+        
+    
+    
+            var poly_line_6e8eef6e5b7328ea99d5751f5d49344e = L.polyline(
+                [[40.76087502, -74.00277668], [40.71754834, -74.01322069]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_7473aa83ac84c5d43b614cb35d898aac = new L.RegularPolygonMarker(
+                [40.71273266, -74.0046073],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_eda7466369930bf6d9025e94a821c240 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef89d034ba7fdf73b5bb5b435ddcd657 = $(`<div id="html_ef89d034ba7fdf73b5bb5b435ddcd657" style="width: 100.0%; height: 100.0%;">Start: Centre St & Chambers St → Cadman Plaza E & Tillary St (239 trips)</div>`)[0];
+                popup_eda7466369930bf6d9025e94a821c240.setContent(html_ef89d034ba7fdf73b5bb5b435ddcd657);
+            
+        
+
+        regular_polygon_marker_7473aa83ac84c5d43b614cb35d898aac.bindPopup(popup_eda7466369930bf6d9025e94a821c240)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_19f1074482c86bf9e9f12fc6cb54cd77 = new L.RegularPolygonMarker(
+                [40.69597683, -73.99014892],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_e602406400d3c90c26337f1d7418e9d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8257dacff55b1c5180cc6467aa138242 = $(`<div id="html_8257dacff55b1c5180cc6467aa138242" style="width: 100.0%; height: 100.0%;">End: Centre St & Chambers St → Cadman Plaza E & Tillary St (239 trips)</div>`)[0];
+                popup_e602406400d3c90c26337f1d7418e9d5.setContent(html_8257dacff55b1c5180cc6467aa138242);
+            
+        
+
+        regular_polygon_marker_19f1074482c86bf9e9f12fc6cb54cd77.bindPopup(popup_e602406400d3c90c26337f1d7418e9d5)
+        ;
+
+        
+    
+    
+            var poly_line_7004afe754e22bdcc6c77d7d36c35837 = L.polyline(
+                [[40.71273266, -74.0046073], [40.69597683, -73.99014892]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_62db625ccde8e993273de8dd5a5036cb = new L.RegularPolygonMarker(
+                [40.76590936, -73.97634151],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_118957be8ff9ba28c11c264ae6fcd7f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8587aa1c3a61a386e5d1db16eb7aa424 = $(`<div id="html_8587aa1c3a61a386e5d1db16eb7aa424" style="width: 100.0%; height: 100.0%;">Start: Central Park S & 6 Ave → Grand Army Plaza & Central Park S (202 trips)</div>`)[0];
+                popup_118957be8ff9ba28c11c264ae6fcd7f5.setContent(html_8587aa1c3a61a386e5d1db16eb7aa424);
+            
+        
+
+        regular_polygon_marker_62db625ccde8e993273de8dd5a5036cb.bindPopup(popup_118957be8ff9ba28c11c264ae6fcd7f5)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_90887d52d6aff6b9d838507375e682c9 = new L.RegularPolygonMarker(
+                [40.7643971, -73.97371465],
+                {
+  "stroke": true,
+  "color": "red",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_4437fdc90ada24167581b4624936b3b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d79085cc66ee9a93d7162cd7b1f2bb0 = $(`<div id="html_8d79085cc66ee9a93d7162cd7b1f2bb0" style="width: 100.0%; height: 100.0%;">End: Central Park S & 6 Ave → Grand Army Plaza & Central Park S (202 trips)</div>`)[0];
+                popup_4437fdc90ada24167581b4624936b3b7.setContent(html_8d79085cc66ee9a93d7162cd7b1f2bb0);
+            
+        
+
+        regular_polygon_marker_90887d52d6aff6b9d838507375e682c9.bindPopup(popup_4437fdc90ada24167581b4624936b3b7)
+        ;
+
+        
+    
+    
+            var poly_line_adeac521ae7443286b773731557a8585 = L.polyline(
+                [[40.76590936, -73.97634151], [40.7643971, -73.97371465]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+            var regular_polygon_marker_8bf4f9d78122cafb22466d8fb260e59a = new L.RegularPolygonMarker(
+                [40.76695317, -73.98169333],
+                {
+  "stroke": true,
+  "color": "green",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 10,
+  "numberOfSides": 4,
+  "rotation": 45,
+}
+            ).addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+    
+        var popup_1ea44c43fa85153fcb850a75b73c89cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6468f51200093675f1f87c4c2758bdf1 = $(`<div id="html_6468f51200093675f1f87c4c2758bdf1" style="width: 100.0%; height: 100.0%;">Round trip: Broadway & W 58 St (round trip) (200 trips)</div>`)[0];
+                popup_1ea44c43fa85153fcb850a75b73c89cf.setContent(html_6468f51200093675f1f87c4c2758bdf1);
+            
+        
+
+        regular_polygon_marker_8bf4f9d78122cafb22466d8fb260e59a.bindPopup(popup_1ea44c43fa85153fcb850a75b73c89cf)
+        ;
+
+        
+    
+    
+            tile_layer_676f7c955f4d41f7148cc4c83e56edee.addTo(map_f5ad07f1ad4f303929601106637a650d);
+        
+</script>
+</html>

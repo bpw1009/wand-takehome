@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2c50d41144ee405aea154ba92002f715 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-dvf/0.3.0/leaflet-dvf.markers.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2c50d41144ee405aea154ba92002f715" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2c50d41144ee405aea154ba92002f715 = L.map(
+                "map_2c50d41144ee405aea154ba92002f715",
+                {
+                    center: [40.73, -73.99],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_37f783c58931fe73cda4f372d531f053 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_37f783c58931fe73cda4f372d531f053.addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_c3a67f78289745c0573114f00ce257f9 = new L.RegularPolygonMarker(
+                [40.74173969, -73.99415556],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_399d07f609534087ee10fd0d5424eb2c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d86efb91594975cf4cc28dcd011aca0b = $(`<div id="html_d86efb91594975cf4cc28dcd011aca0b" style="width: 100.0%; height: 100.0%;">Start: W 21 St & 6 Ave → 9 Ave & W 22 St (424 trips)</div>`)[0];
+                popup_399d07f609534087ee10fd0d5424eb2c.setContent(html_d86efb91594975cf4cc28dcd011aca0b);
+            
+        
+
+        regular_polygon_marker_c3a67f78289745c0573114f00ce257f9.bindPopup(popup_399d07f609534087ee10fd0d5424eb2c)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_d98e075c626e5a773cfb3d1f499ffb19 = new L.RegularPolygonMarker(
+                [40.7454973, -74.00197139],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_0ddd07cc85436e9dd98f4d95c67ed5d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cc1098c577479e1605fd0f59c8cd820f = $(`<div id="html_cc1098c577479e1605fd0f59c8cd820f" style="width: 100.0%; height: 100.0%;">End: W 21 St & 6 Ave → 9 Ave & W 22 St (424 trips)</div>`)[0];
+                popup_0ddd07cc85436e9dd98f4d95c67ed5d2.setContent(html_cc1098c577479e1605fd0f59c8cd820f);
+            
+        
+
+        regular_polygon_marker_d98e075c626e5a773cfb3d1f499ffb19.bindPopup(popup_0ddd07cc85436e9dd98f4d95c67ed5d2)
+        ;
+
+        
+    
+    
+            var poly_line_1b8b94a60f1616702e9e84c3fafd7df3 = L.polyline(
+                [[40.74173969, -73.99415556], [40.7454973, -74.00197139]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_22cb994a42ae92a52aacb90749f0fc21 = new L.RegularPolygonMarker(
+                [40.72621788, -73.98379855],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_68a7ab78a8dc0acf660d61af969722f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f80a41d55505944a8068508a63c44cca = $(`<div id="html_f80a41d55505944a8068508a63c44cca" style="width: 100.0%; height: 100.0%;">Start: E 7 St & Avenue A → Lafayette St & E 8 St (346 trips)</div>`)[0];
+                popup_68a7ab78a8dc0acf660d61af969722f1.setContent(html_f80a41d55505944a8068508a63c44cca);
+            
+        
+
+        regular_polygon_marker_22cb994a42ae92a52aacb90749f0fc21.bindPopup(popup_68a7ab78a8dc0acf660d61af969722f1)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_cd9df7203d2446c377559ed28a734da7 = new L.RegularPolygonMarker(
+                [40.73028666, -73.9907647],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_6f7b6e3f210828b19760a92018b557e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e639f2b68af5917affb2509ea8435e6 = $(`<div id="html_2e639f2b68af5917affb2509ea8435e6" style="width: 100.0%; height: 100.0%;">End: E 7 St & Avenue A → Lafayette St & E 8 St (346 trips)</div>`)[0];
+                popup_6f7b6e3f210828b19760a92018b557e8.setContent(html_2e639f2b68af5917affb2509ea8435e6);
+            
+        
+
+        regular_polygon_marker_cd9df7203d2446c377559ed28a734da7.bindPopup(popup_6f7b6e3f210828b19760a92018b557e8)
+        ;
+
+        
+    
+    
+            var poly_line_2c243dfba1266f571a93ca6de1af7b05 = L.polyline(
+                [[40.72621788, -73.98379855], [40.73028666, -73.9907647]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_296d5ed29eced0b7692ebfc46edc7753 = new L.RegularPolygonMarker(
+                [40.751873, -73.977706],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_c88d56dcda29b5e4832ab6161f6402ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_66a7659fad6dbff5a10039e7258c656d = $(`<div id="html_66a7659fad6dbff5a10039e7258c656d" style="width: 100.0%; height: 100.0%;">Start: Pershing Square North → W 33 St & 7 Ave (325 trips)</div>`)[0];
+                popup_c88d56dcda29b5e4832ab6161f6402ff.setContent(html_66a7659fad6dbff5a10039e7258c656d);
+            
+        
+
+        regular_polygon_marker_296d5ed29eced0b7692ebfc46edc7753.bindPopup(popup_c88d56dcda29b5e4832ab6161f6402ff)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_34b731395ba14c88b03c9d5d3c4666a1 = new L.RegularPolygonMarker(
+                [40.75019995, -73.99093085],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_3f8cd9ac3e0832b1c2fc93e62a03808a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c326a4927a310e6a9269418afcf4fb5e = $(`<div id="html_c326a4927a310e6a9269418afcf4fb5e" style="width: 100.0%; height: 100.0%;">End: Pershing Square North → W 33 St & 7 Ave (325 trips)</div>`)[0];
+                popup_3f8cd9ac3e0832b1c2fc93e62a03808a.setContent(html_c326a4927a310e6a9269418afcf4fb5e);
+            
+        
+
+        regular_polygon_marker_34b731395ba14c88b03c9d5d3c4666a1.bindPopup(popup_3f8cd9ac3e0832b1c2fc93e62a03808a)
+        ;
+
+        
+    
+    
+            var poly_line_95c272d6f434e1f7859eceec686e6f55 = L.polyline(
+                [[40.751873, -73.977706], [40.75019995, -73.99093085]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_72f9381e59023d79320e82dbe1d4713c = new L.RegularPolygonMarker(
+                [40.70834698, -74.01713445],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_2e74d1223cc75517bb224a8c71f27e6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6925240cf8c9f726349ce5c1a1f63e15 = $(`<div id="html_6925240cf8c9f726349ce5c1a1f63e15" style="width: 100.0%; height: 100.0%;">Start: West Thames St → Vesey Pl & River Terrace (315 trips)</div>`)[0];
+                popup_2e74d1223cc75517bb224a8c71f27e6f.setContent(html_6925240cf8c9f726349ce5c1a1f63e15);
+            
+        
+
+        regular_polygon_marker_72f9381e59023d79320e82dbe1d4713c.bindPopup(popup_2e74d1223cc75517bb224a8c71f27e6f)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_5268cceecab1df5fd82cc75a5975afdf = new L.RegularPolygonMarker(
+                [40.7153379, -74.01658354],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_c32591bb479a33e5dc68aca3f88b8b3c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1fe5c78160dd4fdbf5f9ea1e085587f = $(`<div id="html_f1fe5c78160dd4fdbf5f9ea1e085587f" style="width: 100.0%; height: 100.0%;">End: West Thames St → Vesey Pl & River Terrace (315 trips)</div>`)[0];
+                popup_c32591bb479a33e5dc68aca3f88b8b3c.setContent(html_f1fe5c78160dd4fdbf5f9ea1e085587f);
+            
+        
+
+        regular_polygon_marker_5268cceecab1df5fd82cc75a5975afdf.bindPopup(popup_c32591bb479a33e5dc68aca3f88b8b3c)
+        ;
+
+        
+    
+    
+            var poly_line_e04dc7f8a36c4bc9275bd01fc2b2adf7 = L.polyline(
+                [[40.70834698, -74.01713445], [40.7153379, -74.01658354]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_1a86eab9c1fcdb894f7ed9a40327d503 = new L.RegularPolygonMarker(
+                [40.74173969, -73.99415556],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_d900337999504930a7497a511dc91b63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_862e82f71241e0203383b91f17846c6c = $(`<div id="html_862e82f71241e0203383b91f17846c6c" style="width: 100.0%; height: 100.0%;">Start: W 21 St & 6 Ave → W 22 St & 10 Ave (315 trips)</div>`)[0];
+                popup_d900337999504930a7497a511dc91b63.setContent(html_862e82f71241e0203383b91f17846c6c);
+            
+        
+
+        regular_polygon_marker_1a86eab9c1fcdb894f7ed9a40327d503.bindPopup(popup_d900337999504930a7497a511dc91b63)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_aa0fa27db246f5ab69775cb72a49916e = new L.RegularPolygonMarker(
+                [40.74691959, -74.00451887],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_87b5379d4bd4b1ef3049de6baa938104 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9376e59844b1c9ef9cef9296bc03a79 = $(`<div id="html_e9376e59844b1c9ef9cef9296bc03a79" style="width: 100.0%; height: 100.0%;">End: W 21 St & 6 Ave → W 22 St & 10 Ave (315 trips)</div>`)[0];
+                popup_87b5379d4bd4b1ef3049de6baa938104.setContent(html_e9376e59844b1c9ef9cef9296bc03a79);
+            
+        
+
+        regular_polygon_marker_aa0fa27db246f5ab69775cb72a49916e.bindPopup(popup_87b5379d4bd4b1ef3049de6baa938104)
+        ;
+
+        
+    
+    
+            var poly_line_ba9ce2634731c3369f8a7912eca65087 = L.polyline(
+                [[40.74173969, -73.99415556], [40.74691959, -74.00451887]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_3afa9bb373c99462946a63f7418cc6b3 = new L.RegularPolygonMarker(
+                [40.75320159, -73.9779874],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_13927b4a00ba69c0e44303d61fafa586 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8c2455341e2ebfd976dc064f95c4c24 = $(`<div id="html_a8c2455341e2ebfd976dc064f95c4c24" style="width: 100.0%; height: 100.0%;">Start: E 43 St & Vanderbilt Ave → W 41 St & 8 Ave (314 trips)</div>`)[0];
+                popup_13927b4a00ba69c0e44303d61fafa586.setContent(html_a8c2455341e2ebfd976dc064f95c4c24);
+            
+        
+
+        regular_polygon_marker_3afa9bb373c99462946a63f7418cc6b3.bindPopup(popup_13927b4a00ba69c0e44303d61fafa586)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_f1648cc8a366e219bfbea47d101a3713 = new L.RegularPolygonMarker(
+                [40.75640548, -73.9900262],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_1918f973299a7474a410e4e6dae628c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce569b1464b4c3a2bbe82ded2ea37879 = $(`<div id="html_ce569b1464b4c3a2bbe82ded2ea37879" style="width: 100.0%; height: 100.0%;">End: E 43 St & Vanderbilt Ave → W 41 St & 8 Ave (314 trips)</div>`)[0];
+                popup_1918f973299a7474a410e4e6dae628c9.setContent(html_ce569b1464b4c3a2bbe82ded2ea37879);
+            
+        
+
+        regular_polygon_marker_f1648cc8a366e219bfbea47d101a3713.bindPopup(popup_1918f973299a7474a410e4e6dae628c9)
+        ;
+
+        
+    
+    
+            var poly_line_48e72df0733a46eae7fe31d1f4b8a698 = L.polyline(
+                [[40.75320159, -73.9779874], [40.75640548, -73.9900262]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_fb841cd2e883e8cac9ac8a613c0e2502 = new L.RegularPolygonMarker(
+                [40.72740794, -73.98142006],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_4f5cecab3541b8d3ae7717e783763cc1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d1347c947bfec6d81023ff3d4eca701c = $(`<div id="html_d1347c947bfec6d81023ff3d4eca701c" style="width: 100.0%; height: 100.0%;">Start: E 10 St & Avenue A → Lafayette St & E 8 St (296 trips)</div>`)[0];
+                popup_4f5cecab3541b8d3ae7717e783763cc1.setContent(html_d1347c947bfec6d81023ff3d4eca701c);
+            
+        
+
+        regular_polygon_marker_fb841cd2e883e8cac9ac8a613c0e2502.bindPopup(popup_4f5cecab3541b8d3ae7717e783763cc1)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_9e11bc4d0d3899243ad85a4ccc34fbfb = new L.RegularPolygonMarker(
+                [40.73028666, -73.9907647],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_a0c671c269c2310e2ed3d599eda5515d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1792e130aa587fcd0747a79a037fab12 = $(`<div id="html_1792e130aa587fcd0747a79a037fab12" style="width: 100.0%; height: 100.0%;">End: E 10 St & Avenue A → Lafayette St & E 8 St (296 trips)</div>`)[0];
+                popup_a0c671c269c2310e2ed3d599eda5515d.setContent(html_1792e130aa587fcd0747a79a037fab12);
+            
+        
+
+        regular_polygon_marker_9e11bc4d0d3899243ad85a4ccc34fbfb.bindPopup(popup_a0c671c269c2310e2ed3d599eda5515d)
+        ;
+
+        
+    
+    
+            var poly_line_f9cc74988768c3bb2f3b1ea0763581ca = L.polyline(
+                [[40.72740794, -73.98142006], [40.73028666, -73.9907647]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_89d33f8acca5d7bde08bccc7e6024986 = new L.RegularPolygonMarker(
+                [40.72043411, -74.01020609],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_16169c074f3a5d77c206ada42fad8da9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e261d39cf00844095212d3a12c1c2a9 = $(`<div id="html_5e261d39cf00844095212d3a12c1c2a9" style="width: 100.0%; height: 100.0%;">Start: Greenwich St & N Moore St → Greenwich St & Warren St (285 trips)</div>`)[0];
+                popup_16169c074f3a5d77c206ada42fad8da9.setContent(html_5e261d39cf00844095212d3a12c1c2a9);
+            
+        
+
+        regular_polygon_marker_89d33f8acca5d7bde08bccc7e6024986.bindPopup(popup_16169c074f3a5d77c206ada42fad8da9)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a39df1fcb5f3d1780d452feeb1cef6ab = new L.RegularPolygonMarker(
+                [40.71542197, -74.01121978],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_d18f59d04bffa9b33c24017b94d81132 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_07c199f0366e93f33949306bc37ea51a = $(`<div id="html_07c199f0366e93f33949306bc37ea51a" style="width: 100.0%; height: 100.0%;">End: Greenwich St & N Moore St → Greenwich St & Warren St (285 trips)</div>`)[0];
+                popup_d18f59d04bffa9b33c24017b94d81132.setContent(html_07c199f0366e93f33949306bc37ea51a);
+            
+        
+
+        regular_polygon_marker_a39df1fcb5f3d1780d452feeb1cef6ab.bindPopup(popup_d18f59d04bffa9b33c24017b94d81132)
+        ;
+
+        
+    
+    
+            var poly_line_32c1a313104062c5cbbf953c225992f4 = L.polyline(
+                [[40.72043411, -74.01020609], [40.71542197, -74.01121978]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_cf0f1dd0410bfe78ae53879b414a00d1 = new L.RegularPolygonMarker(
+                [40.751873, -73.977706],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_e50a56f080ee6da2813160d5fa46ff53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71129b19387429a9e8eb8a74c814408e = $(`<div id="html_71129b19387429a9e8eb8a74c814408e" style="width: 100.0%; height: 100.0%;">Start: Pershing Square North → W 41 St & 8 Ave (282 trips)</div>`)[0];
+                popup_e50a56f080ee6da2813160d5fa46ff53.setContent(html_71129b19387429a9e8eb8a74c814408e);
+            
+        
+
+        regular_polygon_marker_cf0f1dd0410bfe78ae53879b414a00d1.bindPopup(popup_e50a56f080ee6da2813160d5fa46ff53)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_7e0ac23f1ba5bac5a85a8dc98f3d2db2 = new L.RegularPolygonMarker(
+                [40.75640548, -73.9900262],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_18c303cceb3bf19bdb0d812715f8e996 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcd4c49cea14960a95048f7193e260cd = $(`<div id="html_fcd4c49cea14960a95048f7193e260cd" style="width: 100.0%; height: 100.0%;">End: Pershing Square North → W 41 St & 8 Ave (282 trips)</div>`)[0];
+                popup_18c303cceb3bf19bdb0d812715f8e996.setContent(html_fcd4c49cea14960a95048f7193e260cd);
+            
+        
+
+        regular_polygon_marker_7e0ac23f1ba5bac5a85a8dc98f3d2db2.bindPopup(popup_18c303cceb3bf19bdb0d812715f8e996)
+        ;
+
+        
+    
+    
+            var poly_line_0bb32113ccd955c8d48c18d9085858d2 = L.polyline(
+                [[40.751873, -73.977706], [40.75640548, -73.9900262]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            var regular_polygon_marker_270a5707464649a1d4e66fe0b9fc327b = new L.RegularPolygonMarker(
+                [40.74734825, -73.99723551],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 3,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_ad47da0cf78e7aa84def5210ddc1af93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c817d1e1843b71768663629e17ff1da = $(`<div id="html_9c817d1e1843b71768663629e17ff1da" style="width: 100.0%; height: 100.0%;">Start: W 26 St & 8 Ave → 11 Ave & W 27 St (280 trips)</div>`)[0];
+                popup_ad47da0cf78e7aa84def5210ddc1af93.setContent(html_9c817d1e1843b71768663629e17ff1da);
+            
+        
+
+        regular_polygon_marker_270a5707464649a1d4e66fe0b9fc327b.bindPopup(popup_ad47da0cf78e7aa84def5210ddc1af93)
+        ;
+
+        
+    
+    
+            var regular_polygon_marker_a94d83002b8e107fccae2ecc8d4cfec4 = new L.RegularPolygonMarker(
+                [40.751396, -74.005226],
+                {
+  "stroke": true,
+  "color": "blue",
+  "weight": 3,
+  "opacity": 1.0,
+  "lineCap": "round",
+  "lineJoin": "round",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "bubblingMouseEvents": true,
+  "radius": 8,
+  "numberOfSides": 4,
+  "rotation": 0,
+}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+        var popup_a56f954435999574c3c2b548d768c8d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_52f77d53ec5678a47633032242f03508 = $(`<div id="html_52f77d53ec5678a47633032242f03508" style="width: 100.0%; height: 100.0%;">End: W 26 St & 8 Ave → 11 Ave & W 27 St (280 trips)</div>`)[0];
+                popup_a56f954435999574c3c2b548d768c8d2.setContent(html_52f77d53ec5678a47633032242f03508);
+            
+        
+
+        regular_polygon_marker_a94d83002b8e107fccae2ecc8d4cfec4.bindPopup(popup_a56f954435999574c3c2b548d768c8d2)
+        ;
+
+        
+    
+    
+            var poly_line_d8b6a517120cf8aa30e49babeebfa0d7 = L.polyline(
+                [[40.74734825, -73.99723551], [40.751396, -74.005226]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.6, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+    
+            tile_layer_37f783c58931fe73cda4f372d531f053.addTo(map_2c50d41144ee405aea154ba92002f715);
+        
+</script>
+</html>
