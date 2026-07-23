@@ -1,14 +1,14 @@
 -- Check Nulls
 -- SELECT COUNT(*) AS total, COUNT(DISTINCT bikeid || CAST(starttime AS STRING)) AS distinct_trips
 -- FROM `bigquery-public-data.new_york_citibike.citibike_trips`
--- WHERE EXTRACT(YEAR FROM starttime) = 2017;
+-- WHERE EXTRACT(YEAR FROM starttime) = 2015;
 
 -- Count distinct trips and use qualify with rank to get the start_station_id with the most trips
 SELECT start_station_id, start_station_name, COUNT(DISTINCT bikeid || CAST(starttime AS STRING)) d_trips
 FROM
 `bigquery-public-data.new_york_citibike.citibike_trips` t
 
-WHERE EXTRACT(YEAR FROM starttime) = 2017
+WHERE EXTRACT(YEAR FROM starttime) = 2015
 GROUP BY 1,2
 --ORDER BY 3 DESC
 
@@ -20,7 +20,7 @@ SELECT DISTINCT usertype, PERCENTILE_CONT(tripduration, 0.5) OVER(PARTITION BY u
 FROM
 `bigquery-public-data.new_york_citibike.citibike_trips` t
 
-WHERE EXTRACT(YEAR FROM starttime) = 2017
+WHERE EXTRACT(YEAR FROM starttime) = 2015
 AND usertype IS NOT NULL;
 
 
@@ -30,7 +30,7 @@ SELECT ROUND(COUNT(DISTINCT CASE WHEN start_station_id = end_station_id THEN bik
 FROM
 `bigquery-public-data.new_york_citibike.citibike_trips` t
 
-WHERE EXTRACT(YEAR FROM starttime) = 2017;
+WHERE EXTRACT(YEAR FROM starttime) = 2015;
 
 -- Adding usertype to the above query
 SELECT usertype, ROUND(COUNT(DISTINCT CASE WHEN start_station_id = end_station_id THEN bikeid || CAST(starttime AS STRING) END) / 
@@ -38,7 +38,7 @@ SELECT usertype, ROUND(COUNT(DISTINCT CASE WHEN start_station_id = end_station_i
 FROM
 `bigquery-public-data.new_york_citibike.citibike_trips` t
 
-WHERE EXTRACT(YEAR FROM starttime) = 2017
+WHERE EXTRACT(YEAR FROM starttime) = 2015
 GROUP BY 1;
 
 
@@ -49,7 +49,7 @@ SELECT start_station_id
 FROM
 `bigquery-public-data.new_york_citibike.citibike_trips`
 
-WHERE EXTRACT(YEAR FROM starttime) = 2017
+WHERE EXTRACT(YEAR FROM starttime) = 2015
 GROUP BY 1
 QUALIFY RANK() OVER( ORDER BY COUNT(DISTINCT bikeid || CAST(starttime AS STRING)) DESC) <=20
 ),
@@ -67,7 +67,7 @@ FROM
 JOIN 
 t20
 ON t.start_station_id = t20.start_station_id
-WHERE EXTRACT(YEAR FROM starttime) = 2017
+WHERE EXTRACT(YEAR FROM starttime) = 2015
 AND EXTRACT(DAYOFWEEK FROM starttime) BETWEEN 2 AND 6
 GROUP BY 1,2
 )
